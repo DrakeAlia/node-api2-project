@@ -8,6 +8,6 @@ const port = 7000;
 
 server.listen(port, () => console.log(`\n == API on port ${port} == \n`));
 
-const postsRouter = require('../posts/posts-router.js');
+const postsRouter = require('./posts/posts-router.js');
 
 server.use('/api/posts', postsRouter);
